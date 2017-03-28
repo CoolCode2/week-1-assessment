@@ -23,15 +23,21 @@ h1{
 }
 
 header{
+	/* this tag is just the block of color at the top of the screen */
 	background-color: rgba(53, 89, 125, .08);
 	height: 280px;
+	/*this command makes the opacity increase from the top of the div to the bottom */
 	background: linear-gradient(to bottom, rgba(81, 118, 151, 1), rgba(53, 89,125,1))
 }
+/* the main container that holds the pics on the left and the text on the right*/
 main{
 	display:block;
 	margin: 0 auto;
 	max-width: 800px;
 	margin: bottom;
+	/* the following line is what moves the main container up and over the header
+	without it it would be stuck below it
+	 */
 	position: relative;
 	bottom: 200px;
 }
@@ -39,15 +45,23 @@ body{
 	max-height: 875px;
 }
 div{
+	/* makes the two inner divs take up 1/2 of the main div */
 	width: 50%;
+
 }  
 
 h2{
 	color : rgb(11,44,80);
 }
+.s{
+	background-color: white;
+}
+section{
 
+}
 .capture{
-	
+	/* this block gives the text its line and letter spacing
+	 that the original had */
 	display: block;
 	letter-spacing: .1em;
 	float:right;
@@ -62,6 +76,7 @@ h2{
 	display: inline-block;
 	margin-right: 50%;
 }
+
 button{
 	background: none;
 	border: white;
@@ -70,19 +85,25 @@ span{
 	text-transform: uppercase;
 }
 footer{
-	display:block;
+	
+	display: block;
 	
 	clear: both;
 	margin-left: 25%;
+	/* centers all of the li elements*/
 	margin: 0 auto;
 	max-width: 75%;
 	color: rgba(113, 144, 171,1);
 	font-size: 12px;
 	font-family: arial;
+	/* had to make postition relative to make the bottom links
+	float higher up on the page, so I think the footer is actually
+	overlapping the main container */
 	position: relative;
 	bottom: 125px;
 }
 li{
+	/* this line makes the li's able to be floated next to eachother */
 	display:inline-block;
 	padding-left: 10px;
 	padding-right:10px;
@@ -91,6 +112,3 @@ li{
 	color: rgb(173,173,173);
 }
 
-.mainBlock{
-background-color: #c393e2;
-}
